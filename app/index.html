@@ -8,15 +8,24 @@
 <body>
     <h1>Hello to you!</h1>
     <div class="carousel">
-        <div class="image">
-            <img src="images/img_1.jpg" alt="">
+        <div class="images">
+            <img class="image_item active_img" src="images/img_1.jpg" alt="">
+            <img class="image_item" src="images/img_2.jpg" alt="">
+            <img class="image_item" src="images/img_3.jpg" alt="">
+            <img class="image_item" src="images/img_2.jpg" alt="">
         </div>
-        <div class="scroll_left"></div>
+        <div class="scroll_left">
+            <a href="#" class="back">
+                <img src="images/back.svg" alt="next arrow">
+            </a>
+        </div>
         <div class="scroll_right">
             <a href="#" class="next">
                 <img src="images/next.svg" alt="next arrow">
             </a>
         </div>
+        <ol class="dots">
+        </ol>
     </div>
 </body>
 <script src="js/jquery-1.12.4.js"></script>
