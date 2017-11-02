@@ -18,11 +18,8 @@ h1 {
   .images img {
     width: 100%;
     position: absolute;
-    transition: .5s;
-    left: 0; }
-  .images .active_img {
-    display: block;
-    z-index: 5; }
+    left: 0;
+    z-index: 0; }
 
 .navigation, .scroll_left, .scroll_right {
   display: table;
@@ -34,8 +31,7 @@ h1 {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    height: 100%;
-    transition: .5s; }
+    height: 100%; }
     .navigation a:hover, .scroll_left a:hover, .scroll_right a:hover {
       background-color: rgba(255, 255, 255, 0.3); }
   .navigation img, .scroll_left img, .scroll_right img {

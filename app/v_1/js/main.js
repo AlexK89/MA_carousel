@@ -18,6 +18,7 @@ function next_img() {
     } else {
         img_number = 0
     }
+    $(".left_img").css("z-index", -10)
     active_dot()
     show_image()
 }
@@ -28,6 +29,7 @@ function previous_img() {
     } else {
         img_number = $images_amount
     }
+    $(".right_img").css("z-index", -10)
 
     active_dot()
     show_image()
@@ -60,6 +62,7 @@ function show_image() {
     styling_left_right()
     $images.eq(img_number).addClass("active_img").css({
         "left": "0",
+        "z-index": "5"
     })
     timer = setTimeout(next_img, 7000)
     left_right_img()
@@ -85,9 +88,11 @@ function styling_left_right() {
 
     $(".left_img").css({
         "left": ($left_right_float * -1),
+        "z-index": 0
     })
     $(".right_img").css({
         "left": $left_right_float,
+        "z-index": 0
     })
 }
 /*
